@@ -1,10 +1,28 @@
+
+{{view "select" id="size" content=sizes value="selectedSize" prompt="Please select a size" selection="selectedSize"}}
+{{view "select" id="quantity" content=quantities value="selectedQuantity" prompt="Please select a how many you want of that size" selection="selectedQuantity"}}
+
+
+{{view 'swag'}}
+
+
 <h2>Buy your fitzfest tshirt today </h2>
+
+<b>Selected Size: </b>{{selectedSize}}
+<b> Selected Quantity: {{selectedQuantity}}</b>
+
+
+{{#view "paypal"}}
+{{#if selectedSize}}
 <script async="async" src="https://www.paypalobjects.com/js/external/paypal-button-minicart.min.js?merchant=77N877E3K98ME" 
-    data-button="cart" 
-    data-name="T-shirt" 
-    data-amount="15.00" 
-    data-shipping="0.00" 
-    data-tax="0.00" 
-    data-callback="fitzfest.com" 
-    data-env="sandbox"
-></script
+	data-button="cart" 
+	data-name={{selectedSize}}
+	data-amount={{price}}
+	data-quantity={{selectedQuantity}}
+	data-shipping="0.00" 
+	data-tax="0.00" 
+	data-callback="fitzfest.com" 
+	data-env="sandbox"
+></script>
+{{/if}}
+{{/view}}
