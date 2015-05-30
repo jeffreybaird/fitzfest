@@ -7,6 +7,6 @@ var Router = Ember.Router.extend({
 
 export default Router.map(function() {
     this.route('/');
-    this.route('photos');
+    this.route('contact');
     this.route('swag');
 });

@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
 	selectedSize: null,
-	selectedQuantity: null,
+	selectedQuantity: 1,
 	price: "15.00",
 	sizes: ["XL","L","M","S","XS"],
 	quantities: [1,2,3,4,5,6,7,8,9,10],

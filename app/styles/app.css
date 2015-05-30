@@ -1,0 +1,31 @@
+body {
+ background-image: url('images/beachbackground.jpg');
+ background-repeat: no-repeat;
+ font-size: 2.5em;
+}
+
+.fitz-navbar{
+  font-size: 2.0em;
+}
+
+.fitz-brand{
+  font-size: inherit;
+}
+
+li{
+  border: none;
+}
+.navbar{
+  border: none;
+}
+
+.navbar-default{
+  background-color: transparent;
+}
+
+.navbar-brand{
+  padding-top: 5 px;
+  padding-bottom: 12.5px;
+  line-height: 1;
+}
+
