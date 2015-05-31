@@ -1,11 +1,28 @@
 body {
- background-image: url('images/beachbackground.jpg');
+ background-image: url('images/beachbackground1.jpg');
  background-repeat: no-repeat;
- font-size: 2.5em;
+ font-size: 3.0em;
+}
+.big-text{
+  font-size: 1.7em;
+}
+
+.main-body{
+  font-family: 'Cabin', sans-serif !important;
+}
+.nav-font{
+  font-family: 'Lobster', cursive;
 }
 
 .fitz-navbar{
-  font-size: 2.0em;
+  padding-top: 5 px;
+  padding-bottom: 12.5px;
+  line-height: 1;
+  font-size: 2.1em;
+}
+
+.nav{
+  width: 100%;
 }
 
 .fitz-brand{
@@ -14,6 +31,8 @@ body {
 
 li{
   border: none;
+  padding-right: 10px;
+  display: inline;
 }
 .navbar{
   border: none;
@@ -21,11 +40,16 @@ li{
 
 .navbar-default{
   background-color: transparent;
+  border:none;
 }
 
 .navbar-brand{
   padding-top: 5 px;
   padding-bottom: 12.5px;
   line-height: 1;
+}
+
+.navbar-top{
+
 }
 

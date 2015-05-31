@@ -1,5 +1,11 @@
-<h1>Buy your FitzFest T-shirt Today!</h1>
+<h1>Buy your FitzFest T-shirt today!</h1>
 
+<div id="steps " class=>
+  <p><b>Step 1:</b> Select a size and the number of T-shirts you want in that size. Add to your cart.</p>
+  <p><b>Step 2:</b> Repeat with different sizes as needed.</p>
+  <p><b>Step 3:</b> Check out with PayPal.</p>
+  <p><b>Step 4:</b> Prepare to party!</p>
+</div>
 <p>
     <label for="size">Size:</label>
     {{view "select" id="size" content=sizes value="selectedSize" prompt="Please select a size" selection="selectedSize"}}
@@ -11,6 +17,7 @@
     {{view "select" id="quantity"  value="selectedQuantity" selection="selectedQuantity" prompt="Select a Quantity" content=quantities}}
   </p>
 {{/if}}
+
 
 {{view 'swag'}}
 

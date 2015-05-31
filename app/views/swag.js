@@ -10,7 +10,6 @@ export default Ember.View.extend({
 	  }
 	    var children = this.get('childViews');
 	    var paypal = children.objectAt(3);
-	    console.log(paypal)
 	    paypal.rerender();
   }
 });

@@ -1,45 +1,44 @@
-<header id="navbar-top" >
-    <div class="container fitz-navbar">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand fitz-brand" href="#">FitzFest 2015</a>
-        </div>
-          <nav class="navbar navbar-default">
-            <ul id="menu-primary-navigation-en" class="nav navbar-nav">
-              <li>
-                <a href="/">
-                  <span data-title="Home">Home</span>
-                </a>
-              </li>
-              <li>
-                <a href="/swag">
-                  <span data-title="Shirt">Buy Your Shirt</span>
-                </a>
-              </li>
-              <li>
-                <a href="/contact">
-                  <span data-title="Contact">Contact</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
-    </div>
-  </header>
+<div class="main-body">
   <div class="container-fluid">
-  <div class="row">
+    <div class="row">
+    <head>
+      <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+    </head>
+  <header id="navbar-top" class="nav-font" >
+      <div class="fitz-navbar ">
+        <nav class="navbar navbar-default nav-font">
+          <div class="container">
+              <ul id="menu-primary-navigation-en" class="nav navbar-nav">
+               <li>
+                <a href="/">FitzFest 2015</a>
+                </li>
+                <li>
+                  <a href="/swag">
+                    <span data-title="Shirt">Buy Your Shirt</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="/contact">
+                    <span data-title="Contact">Contact</span>
+                  </a>
+                </li>
+              </ul>
 
-      <div class="col-md-4"></div>
-      <div class="col-md-6">
-
-        {{outlet}}
+          </div>
+        </nav>
       </div>
-      <div class="col-md-2"></div>
-
+    </header>
     </div>
-</div>
+    <div class="row">
 
+        <div class="col-lg-4"></div>
+        <div class="col-lg-6">
+
+          {{outlet}}
+        </div>
+        <div class="col-lg-2"></div>
+
+      </div>
+  </div>
+</div>
