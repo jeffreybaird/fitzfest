@@ -6,7 +6,7 @@ export default Ember.Controller.extend({
 	selectedSize: null,
 	selectedQuantity: 1,
 	price: "15.00",
-	sizes: ["XL","L","M","S","XS"],
+	sizes: ["Child S", "Child M","Child L","Adult XL","Adult L","Adult M","Adult S","Adult XS"],
 	quantities: [1,2,3,4,5,6,7,8,9,10],
 	actions: {
 		updateSelectedSize: function(size) {
