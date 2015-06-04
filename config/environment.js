@@ -2,6 +2,15 @@
 
 module.exports = function(environment) {
   var ENV = {
+    contentSecurityPolicy: {
+      'default-src': "'none'",
+      'script-src': "'self' 'unsafe-inline' 'unsafe-eval' https://www.paypalobjects.com/", // Allow scripts from https://cdn.mxpnl.com
+      'font-src': "'self' http://fonts.googleapis.com", // Allow fonts to be loaded from http://fonts.gstatic.com
+      'connect-src': "'self' https://api.mixpanel.com http://custom-api.local", // Allow data (ajax/websocket) from api.mixpanel.com and custom-api.local
+      'img-src': "'self' https://paypalobjects.com",
+      'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com", // Allow inline styles and loaded CSS from http://fonts.googleapis.com
+      'media-src': "'self'"
+    },
     modulePrefix: 'fitz-fest',
     environment: environment,
     baseURL: '/',
@@ -42,15 +51,7 @@ module.exports = function(environment) {
   if (environment === 'production') {
 
   }
-  ENV.contentSecurityPolicy = {
-    'default-src': "'none'",
-    'script-src': "'self' https://cdn.mxpnl.com", // Allow scripts from https://cdn.mxpnl.com
-    'font-src': "'self' http://fonts.googleapis.com", // Allow fonts to be loaded from http://fonts.gstatic.com
-    'connect-src': "'self' https://api.mixpanel.com http://custom-api.local", // Allow data (ajax/websocket) from api.mixpanel.com and custom-api.local
-    'img-src': "'self'",
-    'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com", // Allow inline styles and loaded CSS from http://fonts.googleapis.com
-    'media-src': "'self'"
-  }
+
   return ENV;
 
 
