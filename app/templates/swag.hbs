@@ -39,7 +39,7 @@
 {{#view "paypal"}}
   {{#if selectedSize}}
     {{#if selectedQuantity}}
-    <script async="async" src="https://www.paypalobjects.com/js/external/paypal-button-minicart.min.js?merchant=77N877E3K98ME"
+    <script async="async" src="https://www.paypalobjects.com/js/external/paypal-button-minicart.min.js?merchant=NW4H6B7GFWC3G"
       	data-button="cart"
       	data-name={{selectedSize}}
       	data-amount={{price}}
@@ -47,7 +47,6 @@
       	data-shipping="0.00"
       	data-tax="0.00"
       	data-callback="fitzfest.com"
-      	data-env="sandbox"
     ></script>
     {{/if}}
   {{/if}}
